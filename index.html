@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Khushi Rani – CS Undergraduate, AI/ML Developer & Web Developer."/>
+  <title>Khushi Rani | CS Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="noise"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>KR<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="assets/Khushi_Rani_Resume.pdf" class="btn-resume" download>
+      Resume ↓
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="dot-pulse"></span> Available for Internships
+      </div>
+
+      <h1 class="hero-name reveal">
+        <span class="line-wrap"><span class="line">Khushi</span></span>
+        <span class="line-wrap"><span class="line">Rani.</span></span>
+      </h1>
+
+      <div class="hero-roles reveal">
+        <span class="role-static">I build&nbsp;</span>
+        <span class="role-rotator" id="roleRotator">
+          <span class="role active">AI Tools</span>
+          <span class="role">Web Apps</span>
+          <span class="role">Smart Systems</span>
+          <span class="role">Cool Projects</span>
+        </span>
+      </div>
+
+      <p class="hero-sub reveal">
+        CS Undergraduate @ <span class="hl">University of Delhi</span> &nbsp;·&nbsp;
+        AI/ML Enthusiast &nbsp;·&nbsp; IIT Delhi eDC Member
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn-primary">View My Work →</a>
+        <a href="#contact" class="btn-secondary">Let's Connect</a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span>+
+          <span class="stat-label">AI Projects</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="7">0</span>+
+          <span class="stat-label">Tech Skills</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+          <span class="code-fname">khushi.py</span>
+        </div>
+        <pre class="code-body"><span class="ck">class</span> <span class="cy">KhushiRani</span>:
+  <span class="ck">def</span> <span class="cb">__init__</span>(<span class="co">self</span>):
+    <span class="co">self</span>.name    = <span class="cg">"Khushi Rani"</span>
+    <span class="co">self</span>.role    = <span class="cg">"CS Undergrad"</span>
+    <span class="co">self</span>.college = <span class="cg">"IP College, DU"</span>
+    <span class="co">self</span>.skills  = [
+      <span class="cg">"Python"</span>, <span class="cg">"AI/ML"</span>,
+      <span class="cg">"Web Dev"</span>, <span class="cg">"DSA"</span>
+    ]
+    <span class="co">self</span>.status  = <span class="cg">"Open to Work 🚀"</span>
+
+  <span class="ck">def</span> <span class="cb">get_coffee</span>(<span class="co">self</span>):
+    <span class="ck">return</span> <span class="cg">"☕ Fueling ideas..."</span></pre>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="sec-label reveal"><span class="lnum">01</span><span class="ltxt">About Me</span></div>
+
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="avatar-box">
+            <img src="assets/photo.jpg" alt="Khushi Rani"
+  style="width:240px;height:240px;object-fit:cover;
+  border-radius:16px;border:2px solid rgba(124,106,247,0.3);"/>
+            <div class="av-badge">2nd Year CS</div>
+          </div>
+          <div class="socials">
+            <a href="https://linkedin.com/in/khushi-rani-54a17a367" target="_blank" class="soc-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Khushi21-code" target="_blank" class="soc-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="about-right reveal">
+          <h2 class="about-h">Turning curiosity<br/>into <em>real-world code.</em></h2>
+          <p>I'm a second-year Computer Science student at <strong>Indraprastha College for Women, University of Delhi</strong>. I'm passionate about AI and practical software — building things that solve real problems.</p>
+          <p>From AI image generation with Stable Diffusion to NLP healthcare chatbots, I love projects that challenge me. I'm also an active member of the <strong>Entrepreneurship Development Cell at IIT Delhi</strong>.</p>
+          <p>Currently seeking internships in <strong>Software Development</strong> or <strong>AI/ML</strong>.</p>
+
+          <div class="facts">
+            <div class="fact">
+              <span>🎓</span>
+              <div><strong>B.Sc. Computer Science</strong><span>IP College, DU · 2024–2028 · CGPA 7.45/10</span></div>
+            </div>
+            <div class="fact">
+              <span>📍</span>
+              <div><strong>Mukherjee Nagar, Delhi</strong><span>Open to remote & on-site</span></div>
+            </div>
+            <div class="fact">
+              <span>🏆</span>
+              <div><strong>IIT Delhi eDC Member</strong><span>Entrepreneurship & Innovation</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-sec section" id="skills">
+    <div class="container">
+      <div class="sec-label reveal"><span class="lnum">02</span><span class="ltxt">Tech Stack</span></div>
+      <h2 class="sec-title reveal">What I Work With</h2>
+
+      <div class="skills-grid reveal">
+        <div class="sk-cat">
+          <div class="sk-cat-hdr"><span>⚙️</span> Languages</div>
+          <div class="sk-pills">
+            <span class="sp">Python</span><span class="sp">C++</span>
+            <span class="sp">JavaScript</span><span class="sp">Java</span>
+          </div>
+        </div>
+        <div class="sk-cat">
+          <div class="sk-cat-hdr"><span>🌐</span> Web Dev</div>
+          <div class="sk-pills">
+            <span class="sp">HTML5</span><span class="sp">CSS3</span>
+            <span class="sp">JavaScript</span><span class="sp">React (Learning)</span>
+          </div>
+        </div>
+        <div class="sk-cat">
+          <div class="sk-cat-hdr"><span>🤖</span> AI / ML</div>
+          <div class="sk-pills">
+            <span class="sp">Stable Diffusion</span><span class="sp">ComfyUI</span>
+            <span class="sp">NLTK / spaCy</span><span class="sp">ML Basics</span>
+          </div>
+        </div>
+        <div class="sk-cat">
+          <div class="sk-cat-hdr"><span>🛠️</span> Tools & CS</div>
+          <div class="sk-pills">
+            <span class="sp">Git & GitHub</span><span class="sp">DSA</span>
+            <span class="sp">OOP</span><span class="sp">DBMS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="learning-bar reveal">
+        <span class="learn-lbl">Currently Learning →</span>
+        <span class="ltag">React.js</span>
+        <span class="ltag">Node.js</span>
+        <span class="ltag">Deep Learning</span>
+        <span class="ltag">System Design</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="proj-sec section" id="projects">
+    <div class="container">
+      <div class="sec-label reveal"><span class="lnum">03</span><span class="ltxt">Projects</span></div>
+      <h2 class="sec-title reveal">Things I've Built</h2>
+
+      <div class="proj-grid">
+        <div class="proj-card featured reveal">
+          <div class="proj-num">01</div>
+          <div class="proj-icon">🎨</div>
+          <h3>AI Image Generation</h3>
+          <p class="proj-sub">Stable Diffusion + ComfyUI</p>
+          <p class="proj-desc">Built a full-stack AI image generation platform. Reduced render time by 30% via GPU optimization. Features prompt-based style customization and real-time parameter tuning.</p>
+          <div class="proj-tags"><span>Python</span><span>Stable Diffusion</span><span>ComfyUI</span><span>GPU Opt.</span></div>
+          <div class="proj-impact"><span>⚡ 30% faster rendering</span><span>🎨 Prompt styling</span></div>
+          <a href="https://github.com/Khushi21-code/Repo-on-Image-Generation-.git" target="_blank" class="proj-link-btn">GitHub →</a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-num">02</div>
+          <div class="proj-icon">🏥</div>
+          <h3>AI Healthcare Chatbot</h3>
+          <p class="proj-sub">NLP-Powered Health Assistant</p>
+          <p class="proj-desc">NLP-based chatbot using Python and NLTK/spaCy to assist with healthcare queries, symptom checks, and wellness guidance. Simulates doctor-patient interaction with 85%+ intent accuracy.</p>
+          <div class="proj-tags"><span>Python</span><span>NLP</span><span>NLTK/spaCy</span><span>Chatbot</span></div>
+          <div class="proj-impact"><span>🎯 85%+ accuracy</span><span>💬 Real-time</span></div>
+          <a href="https://github.com/Khushi21-code" target="_blank" class="proj-link-btn">GitHub →</a>
+        </div>
+
+        <div class="proj-card wip reveal">
+          <div class="proj-num">03</div>
+          <div class="proj-icon">🔨</div>
+          <h3>Next Project</h3>
+          <p class="proj-sub">Coming Soon...</p>
+          <p class="proj-desc">Something new is in the works. Follow my GitHub to stay updated on what's coming next.</p>
+          <div class="proj-tags"><span>🚧 In Progress</span></div>
+        </div>
+      </div>
+
+      <div class="proj-cta reveal">
+        <a href="https://github.com/Khushi21-code" target="_blank" class="btn-outline">View All on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="exp-sec section" id="experience">
+    <div class="container">
+      <div class="sec-label reveal"><span class="lnum">04</span><span class="ltxt">Experience & Achievements</span></div>
+      <h2 class="sec-title reveal">My Journey</h2>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <span class="tl-date">2026</span>
+            <h3>Google Student Ambassador Program</h3>
+            <p>Selected to represent Google's developer programs and community initiatives at university level.</p>
+            <span class="tl-tag ach">🏆 Achievement</span>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <span class="tl-date">2024 – Present</span>
+            <h3>Member — IIT Delhi Entrepreneurship Development Cell</h3>
+            <p>Active in startup ideation workshops, entrepreneurship programs. Received LOR for outstanding contribution to CAP Program.</p>
+            <span class="tl-tag exp">💼 Experience</span>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <span class="tl-date">2024</span>
+            <h3>AI Certification — Techsaksham (Microsoft + SAP, EDUNET)</h3>
+            <p>Completed AI & Machine Learning certification under the joint CSR initiative of Microsoft, SAP, and EDUNET Foundation.</p>
+            <span class="tl-tag cert">📜 Certification</span>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <span class="tl-date">2024</span>
+            <h3>UX Design Certification — UXfounder</h3>
+            <p>Built skills in user research, wireframing, and designing user-centric digital experiences.</p>
+            <span class="tl-tag cert">📜 Certification</span>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <span class="tl-date">Aug 2024</span>
+            <h3>B.Sc. Computer Science — IP College, University of Delhi</h3>
+            <p>Coursework: DSA, OOP, AI, DBMS, Computer Networks, Web Development. CGPA: 7.45/10.</p>
+            <span class="tl-tag edu">🎓 Education</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-sec section" id="contact">
+    <div class="container">
+      <div class="sec-label reveal"><span class="lnum">05</span><span class="ltxt">Contact</span></div>
+      <h2 class="sec-title reveal">Let's Work Together</h2>
+      <p class="contact-sub reveal">Actively looking for internships and collaboration opportunities.<br/>Drop me a message — I reply fast!</p>
+
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <a href="mailto:choudharykhushi958@gmail.com" class="ccard">
+            <span class="ccard-icon">✉️</span>
+            <div><strong>Email</strong><span>choudharykhushi958@gmail.com</span></div>
+          </a>
+          <a href="https://linkedin.com/in/khushi-rani-54a17a367" target="_blank" class="ccard">
+            <span class="ccard-icon">💼</span>
+            <div><strong>LinkedIn</strong><span>khushi-rani-54a17a367</span></div>
+          </a>
+          <a href="https://github.com/Khushi21-code" target="_blank" class="ccard">
+            <span class="ccard-icon">🐙</span>
+            <div><strong>GitHub</strong><span>Khushi21-code</span></div>
+          </a>
+          <div class="ccard no-link">
+            <span class="ccard-icon">📱</span>
+            <div><strong>Phone</strong><span>+91 82354 85927</span></div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="fg">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required/>
+          </div>
+          <div class="fg">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required/>
+          </div>
+          <div class="fg">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Internship / Collaboration"/>
+          </div>
+          <div class="fg">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Hey Khushi, I'd love to..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message →</button>
+          <p class="form-note">* Connect to <a href="https://formspree.io" target="_blank">Formspree.io</a> (free) for form to work — see README.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="f-logo"><span class="logo-bracket">&lt;</span>KR<span class="logo-bracket">/&gt;</span></div>
+      <p>Designed & Built by <strong>Khushi Rani</strong> · 2025</p>
+      <p class="f-sub">CS Undergrad · University of Delhi · Open to opportunities</p>
+      <div class="f-links">
+        <a href="https://github.com/Khushi21-code" target="_blank">GitHub</a> ·
+        <a href="https://linkedin.com/in/khushi-rani-54a17a367" target="_blank">LinkedIn</a> ·
+        <a href="mailto:choudharykhushi958@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
